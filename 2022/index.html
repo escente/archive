@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+            rel="stylesheet" />
+
+        <title>2022</title>
+    </head>
+    <body>
+        <div id="back"><a href="../index.html"> ≣ </a></div>
+        <div class="container">
+            <h2>2022</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="0.jpg" alt="Image 0" onclick="openLightbox('0.jpg')" />
+                </div>
+                <div class="gallery-item">
+                    <img src="1.jpg" alt="Image 1" onclick="openLightbox('1.jpg')" />
+                </div>
+                <div class="gallery-item">
+                    <img src="2.jpg" alt="Image 2" onclick="openLightbox('2.jpg')" />
+                </div>
+                <div class="gallery-item">
+                    <img src="3.jpg" alt="Image 3" onclick="openLightbox('3.jpg')" />
+                </div>
+                <div class="gallery-item">
+                    <img src="4.jpg" alt="Image 4" onclick="openLightbox('4.jpg')" />
+                </div>
+                <div class="gallery-item">
+                    <img src="5.jpg" alt="Image 5" onclick="openLightbox('5.jpg')" />
+                </div>
+                <div class="gallery-item">
+                    <img src="6.jpg" alt="Image 6" onclick="openLightbox('6.jpg')" />
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+
+        <div class="lightbox" id="lightbox">
+            <span class="close-btn" onclick="closeLightbox()">&times;</span>
+            <span class="prev-btn" onclick="changeSlide(-1)">&#10094;</span>
+            <span class="next-btn" onclick="changeSlide(1)">&#10095;</span>
+            <div class="lightbox-content">
+                <img class="lightbox-img" id="lightbox-img" src=" " alt="" />
+            </div>
+        </div>
+        <script src="../lightbox%20script.js"></script>
+    </body>
+</html>
