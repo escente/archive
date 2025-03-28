@@ -94,12 +94,17 @@ a.home-button{
     display:block;
     text-align: center;
     font-size: 40px;
-    margin: 5vh;
+    margin: 2vh;
     
 }
 
 a.home-button:hover{
     opacity:0.5;
+}
+
+
+footer{
+    margin:2vh;
 }
 
 .gallery {
@@ -186,3 +191,5 @@ a.home-button:hover{
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
+
+
