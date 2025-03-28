@@ -42,11 +42,10 @@ body {
 }
 
 h1 {
-    font-family: "Bodoni Moda", serif;
-    letter-spacing: 1px;
-    font-size: 50px;
-    font-weight: 500;
-    font-style: normal;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.4em;
+    font-size: 40px;
+    font-weight:300;
     text-align: center;
     margin: 20px 0;
 }
