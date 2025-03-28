@@ -17,18 +17,15 @@ body {
 }
 
 .container {
-    position:relative;
-    z-index:-1;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
 #back a{
+    position:absolute;
     padding:6px 20px;
     font-size: 30px;
-    position:fixed;
-    z-index:100;
     background-color: white;
     margin:12px;
     border-radius: 10px;
@@ -195,3 +192,10 @@ footer{
 }
 
 
+#lightbox {
+    touch-action: none; /* Prevent browser touch gestures */
+}
+
+.lightbox-content {
+    user-select: none; /* Prevent image selection on touch */
+}
