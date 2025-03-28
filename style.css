@@ -10,6 +10,7 @@ a {
 }
 
 body {
+   
     font-family: sans-serif;
     line-height: 1.6;
     background-color: #f0f0f0;
@@ -22,13 +23,12 @@ body {
 }
 
 #back a{
-    text-align: left;
     padding:6px 20px;
     font-size: 30px;
     position:fixed;
+    z-index:100;
     background-color: white;
     margin:12px;
-    z-index:100;
     border-radius: 10px;
     box-shadow:1px 1px 10px rgba(0, 0, 0, 0.16);
 
@@ -36,6 +36,7 @@ body {
 
 #back:hover{
     filter: invert(100%);
+    cursor:pointer;
 }
 
 h1 {
