@@ -22,9 +22,13 @@ function changeSlide(n) {
     document.getElementById("lightbox-img").src = images[currentIndex];
 }
 
-// Close lightbox when clicking outside
-document.getElementById("lightbox-img").addEventListener("click", function (e) {
-    if (e.target === this) closeLightbox();
+// Close when clicking outside the image (on the background)
+document.getElementById("lightbox").addEventListener('click', (e) => {
+    // e.target is what you clicked on. e.currentTarget is the lightbox container.
+    // If they match, it means you clicked the background, not the image.
+    if (e.target === e.currentTarget ) {
+        closeLightbox();
+    }
 });
 
 // Keyboard navigation
@@ -41,35 +45,3 @@ document.addEventListener("keydown", function (e) {
     }
 });
 
-// Add touch event listeners
-document.addEventListener("touchstart", function (e) {
-    if (document.getElementById("lightbox").style.display === "block") {
-        touchStartX = e.touches[0].clientX;
-        touchStartY = e.touches[0].clientY;
-    }
-});
-
-document.addEventListener("touchend", function (e) {
-    if (document.getElementById("lightbox").style.display === "block") {
-        const touchEndX = e.changedTouches[0].clientX;
-        const touchEndY = e.changedTouches[0].clientY;
-        const deltaX = touchEndX - touchStartX;
-        const deltaY = touchEndY - touchStartY;
-
-        // Check if it's a horizontal swipe (not vertical scroll)
-        if (Math.abs(deltaX) > Math.abs(deltaY)) {
-            if (deltaX > swipeThreshold) {
-                changeSlide(-1); // Swipe right to go previous
-            } else if (deltaX < -swipeThreshold) {
-                changeSlide(1); // Swipe left to go next
-            }
-        }
-
-        // Tap to close (if minimal movement)
-        if (Math.abs(deltaX) < 10 && Math.abs(deltaY) < 10) {
-            if (!e.target.closest(".lightbox-content")) {
-                closeLightbox();
-            }
-        }
-    }
-});

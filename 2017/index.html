@@ -18,6 +18,8 @@
         <div class="container">
             <h2>2017</h2>
             <div class="gallery">
+                
+                 <div class="gallery-column">
                 <div class="gallery-item">
                     <img src="0.jpg" alt="Image 0" onclick="openLightbox('0.jpg')" />
                 </div>
@@ -33,6 +35,9 @@
                 <div class="gallery-item">
                     <img src="4.jpg" alt="Image 4" onclick="openLightbox('4.jpg')" />
                 </div>
+                </div>
+                
+                 <div class="gallery-column">
                 <div class="gallery-item">
                     <img src="5.jpg" alt="Image 5" onclick="openLightbox('5.jpg')" />
                 </div>
@@ -51,6 +56,9 @@
                 <div class="gallery-item">
                     <img src="10.jpg" alt="Image 10" onclick="openLightbox('10.jpg')" />
                 </div>
+                </div>
+                
+                 <div class="gallery-column">
                 <div class="gallery-item">
                     <img src="11.jpg" alt="Image 11" onclick="openLightbox('11.jpg')" />
                 </div>
@@ -66,6 +74,9 @@
                 <div class="gallery-item">
                     <img src="15.jpg" alt="Image 15" onclick="openLightbox('15.jpg')" />
                 </div>
+                </div>
+                
+                 <div class="gallery-column">
                 <div class="gallery-item">
                     <img src="16.jpg" alt="Image 16" onclick="openLightbox('16.jpg')" />
                 </div>
@@ -81,6 +92,7 @@
                 <div class="gallery-item">
                     <img src="20.jpg" alt="Image 20" onclick="openLightbox('20.jpg')" />
                 </div>
+                </div>
                 
                 
             </div>
@@ -88,11 +100,10 @@
 
         <!-- Lightbox -->
 
-        <div class="lightbox" id="lightbox">
-            <span class="close-btn" onclick="closeLightbox()">&times;</span>
+      <div class="lightbox" id="lightbox" >
             <span class="prev-btn" onclick="changeSlide(-1)">&#10094;</span>
             <span class="next-btn" onclick="changeSlide(1)">&#10095;</span>
-            <div class="lightbox-content">
+            <div class="lightbox-content" onclick="closeLightbox()" >
                 <img class="lightbox-img" id="lightbox-img" src=" " alt="" />
             </div>
         </div>

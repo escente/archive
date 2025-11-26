@@ -18,6 +18,8 @@
         <div class="container">
             <h2>2013</h2>
             <div class="gallery">
+                
+                 <div class="gallery-column">
                 <div class="gallery-item">
                     <img src="0.jpg" alt="Image 0" onclick="openLightbox('0.jpg')" />
                 </div>
@@ -51,9 +53,13 @@
                 <div class="gallery-item">
                     <img src="10.jpg" alt="Image 10" onclick="openLightbox('10.jpg')" />
                 </div>
+                
                 <div class="gallery-item">
                     <img src="11.jpg" alt="Image 11" onclick="openLightbox('11.jpg')" />
                 </div>
+                     </div>
+                
+                 <div class="gallery-column">
                 <div class="gallery-item">
                     <img src="12.jpg" alt="Image 12" onclick="openLightbox('12.jpg')" />
                 </div>
@@ -81,6 +87,9 @@
                 <div class="gallery-item">
                     <img src="20.jpg" alt="Image 20" onclick="openLightbox('20.jpg')" />
                 </div>
+                </div>
+                     
+                      <div class="gallery-column">
                 <div class="gallery-item">
                     <img src="21.jpg" alt="Image 21" onclick="openLightbox('21.jpg')" />
                 </div>
@@ -111,9 +120,13 @@
                 <div class="gallery-item">
                     <img src="30.jpg" alt="Image 30" onclick="openLightbox('30.jpg')" />
                 </div>
+                  
                 <div class="gallery-item">
                     <img src="31.jpg" alt="Image 31" onclick="openLightbox('31.jpg')" />
                 </div>
+                           </div>
+                          
+                      <div class="gallery-column">  
                 <div class="gallery-item">
                     <img src="32.jpg" alt="Image 32" onclick="openLightbox('32.jpg')" />
                 </div>
@@ -144,17 +157,17 @@
                 <div class="gallery-item">
                     <img src="41.jpg" alt="Image 41" onclick="openLightbox('41.jpg')" />
                 </div>
+                </div>
                 
             </div>
         </div>
 
         <!-- Lightbox -->
 
-        <div class="lightbox" id="lightbox">
-            <span class="close-btn" onclick="closeLightbox()">&times;</span>
+       <div class="lightbox" id="lightbox" >
             <span class="prev-btn" onclick="changeSlide(-1)">&#10094;</span>
             <span class="next-btn" onclick="changeSlide(1)">&#10095;</span>
-            <div class="lightbox-content">
+            <div class="lightbox-content" onclick="closeLightbox()" >
                 <img class="lightbox-img" id="lightbox-img" src=" " alt="" />
             </div>
         </div>

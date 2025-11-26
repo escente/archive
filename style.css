@@ -22,20 +22,27 @@ body {
     padding: 20px;
 }
 
+div #back{
+    z-index:3;
+}
+
 #back a{
-    position:absolute;
-    padding:6px 20px;
-    font-size: 30px;
+    position:fixed;
+     z-index:3;
+    padding:4px 20px;
+    font-size:35px;
     background-color: white;
-    margin:12px;
+    margin:22px;
     border-radius: 10px;
-    box-shadow:1px 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow:4px 5px 6px rgba(0, 0, 0, 0.2);
 
 }
 
-#back:hover{
+#back a:hover{
     filter: invert(100%);
     cursor:pointer;
+    size: 105%;
+    z-index: 3;
 }
 
 h1 {
@@ -44,11 +51,11 @@ h1 {
     font-size: 40px;
     font-weight:300;
     text-align: center;
-    margin: 80px auto;
+    margin: 70px auto;
 }
 
 h2 {
-    margin:50px;
+    margin:80px;
     font-family: "Courier New", monospace;
     font-size: x-large;
     text-align: center;
@@ -107,10 +114,15 @@ footer{
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 15px;
+    display: flex;
+    flex-flow: wrap;
+   
+}
+
+.gallery-column {
+    flex:25%;
+    max-width: 25%;
+    
 }
 
 .gallery-item {
@@ -118,17 +130,34 @@ footer{
     cursor: pointer;
     overflow: hidden;
     border-radius: 5px;
+    padding:10px;
 }
 
 .gallery-item img {
     width: 100%;
-    height: 200px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
 .gallery-item:hover img {
-    transform: scale(1.05);
+    filter: brightness(0.8);
+    transition:0.3s;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 /* Lightbox Styles */
@@ -147,8 +176,8 @@ footer{
 .lightbox-content {
     position: relative;
     max-width: 800px;
-    margin: 2% auto;
-    height: 90%;
+    margin: 4% auto;
+    height: 90%
 }
 
 .lightbox-img {
@@ -174,7 +203,7 @@ footer{
     color: white;
     font-size: 30px;
     cursor: pointer;
-    padding: 10px;
+    padding: 60px;
 }
 
 .prev-btn {
@@ -185,16 +214,7 @@ footer{
     right: 15px;
 }
 
-@media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
 
-
-#lightbox {
-    touch-action: none; /* Prevent browser touch gestures */
-}
 
 .lightbox-content {
     user-select: none; /* Prevent image selection on touch */

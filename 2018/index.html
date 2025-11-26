@@ -18,6 +18,8 @@
         <div class="container">
             <h2>2018</h2>
             <div class="gallery">
+                
+                <div class="gallery-column">
                 <div class="gallery-item">
                     <img src="0.jpg" alt="Image 0" onclick="openLightbox('0.jpg')" />
                 </div>
@@ -42,12 +44,16 @@
                 <div class="gallery-item">
                     <img src="7.jpg" alt="Image 7" onclick="openLightbox('7.jpg')" />
                 </div>
+                 
                 <div class="gallery-item">
                     <img src="8.jpg" alt="Image 8" onclick="openLightbox('8.jpg')" />
                 </div>
                 <div class="gallery-item">
                     <img src="9.jpg" alt="Image 9" onclick="openLightbox('9.jpg')" />
                 </div>
+                    </div>
+                
+                <div class="gallery-column">   
                 <div class="gallery-item">
                     <img src="10.jpg" alt="Image 10" onclick="openLightbox('10.jpg')" />
                 </div>
@@ -66,6 +72,7 @@
                 <div class="gallery-item">
                     <img src="15.jpg" alt="Image 15" onclick="openLightbox('15.jpg')" />
                 </div>
+              
                 <div class="gallery-item">
                     <img src="16.jpg" alt="Image 16" onclick="openLightbox('16.jpg')" />
                 </div>
@@ -78,6 +85,9 @@
                 <div class="gallery-item">
                     <img src="19.jpg" alt="Image 19" onclick="openLightbox('19.jpg')" />
                 </div>
+                      </div>
+                
+                <div class="gallery-column">
                 <div class="gallery-item">
                     <img src="20.jpg" alt="Image 20" onclick="openLightbox('20.jpg')" />
                 </div>
@@ -90,6 +100,7 @@
                 <div class="gallery-item">
                     <img src="23.jpg" alt="Image 23" onclick="openLightbox('23.jpg')" />
                 </div>
+                
                 <div class="gallery-item">
                     <img src="24.jpg" alt="Image 24" onclick="openLightbox('24.jpg')" />
                 </div>
@@ -108,12 +119,17 @@
                 <div class="gallery-item">
                     <img src="29.jpg" alt="Image 29" onclick="openLightbox('29.jpg')" />
                 </div>
+                      </div>
+                
+                <div class="gallery-column">
                 <div class="gallery-item">
                     <img src="30.jpg" alt="Image 30" onclick="openLightbox('30.jpg')" />
                 </div>
+                  
                 <div class="gallery-item">
                     <img src="31.jpg" alt="Image 31" onclick="openLightbox('31.jpg')" />
                 </div>
+                
                 <div class="gallery-item">
                     <img src="32.jpg" alt="Image 32" onclick="openLightbox('32.jpg')" />
                 </div>
@@ -135,17 +151,17 @@
                 <div class="gallery-item">
                     <img src="38.jpg" alt="Image 38" onclick="openLightbox('38.jpg')" />
                 </div>
+                </div>
                 
             </div>
         </div>
 
         <!-- Lightbox -->
 
-        <div class="lightbox" id="lightbox">
-            <span class="close-btn" onclick="closeLightbox()">&times;</span>
+       <div class="lightbox" id="lightbox" >
             <span class="prev-btn" onclick="changeSlide(-1)">&#10094;</span>
             <span class="next-btn" onclick="changeSlide(1)">&#10095;</span>
-            <div class="lightbox-content">
+            <div class="lightbox-content" onclick="closeLightbox()" >
                 <img class="lightbox-img" id="lightbox-img" src=" " alt="" />
             </div>
         </div>

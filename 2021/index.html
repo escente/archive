@@ -18,65 +18,76 @@
         <div class="container">
             <h2>2021</h2>
             <div class="gallery">
-                <div class="gallery-item">
-                    <img src="0.jpg" alt="Image 0" onclick="openLightbox('0.jpg')" />
+                <div class="gallery-column">
+                    <div class="gallery-item">
+                        <img src="0.jpg" alt="Image 0" onclick="openLightbox('0.jpg')" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="1.jpg" alt="Image 1" onclick="openLightbox('1.jpg')" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="2.jpg" alt="Image 2" onclick="openLightbox('2.jpg')" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="3.jpg" alt="Image 3" onclick="openLightbox('3.jpg')" />
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="1.jpg" alt="Image 1" onclick="openLightbox('1.jpg')" />
+
+                <div class="gallery-column">
+                    <div class="gallery-item">
+                        <img src="4.jpg" alt="Image 4" onclick="openLightbox('4.jpg')" />
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="5.jpg" alt="Image 5" onclick="openLightbox('5.jpg')" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="6.jpg" alt="Image 6" onclick="openLightbox('6.jpg')" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="7.jpg" alt="Image 7" onclick="openLightbox('7.jpg')" />
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="2.jpg" alt="Image 2" onclick="openLightbox('2.jpg')" />
+
+                <div class="gallery-column">
+                    <div class="gallery-item">
+                        <img src="8.jpg" alt="Image 8" onclick="openLightbox('8.jpg')" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="9.jpg" alt="Image 9" onclick="openLightbox('9.jpg')" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="10.jpg" alt="Image 10" onclick="openLightbox('10.jpg')" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="11.jpg" alt="Image 11" onclick="openLightbox('11.jpg')" />
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="12.jpg" alt="Image 12" onclick="openLightbox('12.jpg')" />
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="3.jpg" alt="Image 3" onclick="openLightbox('3.jpg')" />
+
+                <div class="gallery-column">
+                    <div class="gallery-item">
+                        <img src="13.jpg" alt="Image 13" onclick="openLightbox('13.jpg')" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="14.jpg" alt="Image 14" onclick="openLightbox('14.jpg')" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="15.jpg" alt="Image 15" onclick="openLightbox('15.jpg')" />
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="4.jpg" alt="Image 4" onclick="openLightbox('4.jpg')" />
-                </div>
-                <div class="gallery-item">
-                    <img src="5.jpg" alt="Image 5" onclick="openLightbox('5.jpg')" />
-                </div>
-                <div class="gallery-item">
-                    <img src="6.jpg" alt="Image 6" onclick="openLightbox('6.jpg')" />
-                </div>
-                <div class="gallery-item">
-                    <img src="7.jpg" alt="Image 7" onclick="openLightbox('7.jpg')" />
-                </div>
-                <div class="gallery-item">
-                    <img src="8.jpg" alt="Image 8" onclick="openLightbox('8.jpg')" />
-                </div>
-                <div class="gallery-item">
-                    <img src="9.jpg" alt="Image 9" onclick="openLightbox('9.jpg')" />
-                </div>
-                <div class="gallery-item">
-                    <img src="10.jpg" alt="Image 10" onclick="openLightbox('10.jpg')" />
-                </div>
-                <div class="gallery-item">
-                    <img src="11.jpg" alt="Image 11" onclick="openLightbox('11.jpg')" />
-                </div>
-                <div class="gallery-item">
-                    <img src="12.jpg" alt="Image 12" onclick="openLightbox('12.jpg')" />
-                </div>
-                <div class="gallery-item">
-                    <img src="13.jpg" alt="Image 13" onclick="openLightbox('13.jpg')" />
-                </div>
-                <div class="gallery-item">
-                    <img src="14.jpg" alt="Image 14" onclick="openLightbox('14.jpg')" />
-                </div>
-                <div class="gallery-item">
-                    <img src="15.jpg" alt="Image 15" onclick="openLightbox('15.jpg')" />
-                </div>
-               
             </div>
         </div>
 
         <!-- Lightbox -->
 
         <div class="lightbox" id="lightbox">
-            <span class="close-btn" onclick="closeLightbox()">&times;</span>
             <span class="prev-btn" onclick="changeSlide(-1)">&#10094;</span>
             <span class="next-btn" onclick="changeSlide(1)">&#10095;</span>
-            <div class="lightbox-content">
+            <div class="lightbox-content" onclick="closeLightbox()">
                 <img class="lightbox-img" id="lightbox-img" src=" " alt="" />
             </div>
         </div>
